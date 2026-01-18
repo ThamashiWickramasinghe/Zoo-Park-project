@@ -67,3 +67,46 @@ The website contains a minimum of **six main pages**, including:
 ---
 
 ## 📂 Project Structure (Example)
+ZooParc-Zoological-Park/
+│
+├── index.html                  # Home page
+├── about.html                  # About ZooParc
+├── visit.html                  # Visit information (hours, tickets, dining)
+├── animals.html                # Animal categories and details
+├── conservation.html           # Conservation and education info
+├── events.html                 # Events and programs
+│
+├── login.html                  # User login page
+├── register.html               # Volunteer / member registration
+├── logout.php                  # Logout functionality
+│
+├── admin/                      # Admin module
+│   ├── admin-login.html        # Admin login
+│   ├── dashboard.html          # Admin dashboard
+│   ├── manage-events.html      # Add / update / delete events
+│   ├── manage-programs.html    # Manage programs
+│   └── manage-members.html     # View members
+│
+├── css/                        # Stylesheets
+│   ├── style.css
+│   └── responsive.css
+│
+├── js/                         # JavaScript files
+│   ├── validation.js
+│   └── main.js
+│
+├── images/                     # Images
+│   ├── animals/
+│   ├── events/
+│   └── zoo/
+│
+├── database/                   # Database files
+│   └── zoo_db.sql
+│
+├── includes/                   # Reusable components
+│   ├── header.php
+│   ├── footer.php
+│   └── db-connect.php
+│
+├── README.md                   # Project documentation
+└── .gitignore                  # Git ignored files
