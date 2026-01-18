@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@,100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Popins',sans-serif;
+}
+
+nav{
+    flex-direction: row;
+
+}  
+nav img{
+    width: 70px;
+    cursor: pointer;
+    margin-left: 0.5px;
+}
+  .menu-bar {
+    background-color: #fff;
+    box-sizing: border-box;
+   
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5%;
+    position: fixed;
+  }
+  .menu-bar ul {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    list-style: none;
+  }
+  .menu-bar ul li {
+    margin-left: 30px;
+    
+    position: relative;
+    padding: 10px 20px;
+  }
+  .menu-bar ul li a {
+    font-size: 18px;
+    color: rgb(9, 82, 57);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .menu-bar ul li a:hover {
+    color:  rgb(114, 223, 183);
+  }
+  .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+  }
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+  }
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #fff;
+  }
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  
+  .menu-bar ul li .btn1{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 18px;
+    background-color: rgb(23, 71, 55);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.menu-bar ul li  .btn1:hover{
+    color: rgb(23, 71, 55);
+    background-color: #fff;
+}
+
+.menu-bar ul li a:hover{
+    color: rgb(43, 48, 47);
+}
+#home{
+    background-image: linear-gradient(rgba(39, 40, 39, 0.3), rgba(61, 63, 61, 0.634)),url("animal4.gif");
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding-top: 40px;
+
+}
+#home h2{
+    color: rgb(246, 249, 248);
+    font-size: 6.5rem;
+    letter-spacing: 1px;
+    margin-top: 20%;
+    margin-left: 25%;
+}
+
+/*text*/
+#about-container{
+    display: flex;
+    align-items: center;
+    padding: 6vw 6vw 2vw 6vw;
+}
+#about-container .about-image{
+    width: 60%;
+    height: 30%;
+}
+#about-container .about-text{
+    width: 40%;
+    padding: 60px;
+}
+#about-container .about-text h2{
+    color: rgb(26, 100, 75);;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    text-align: center;
+}
+#about-container .about-text p{
+    color: rgb(13, 27, 22);
+    font-size: 1.1rem;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#details{
+    text-align: center;
+    margin-top: 25px;
+}
+#details h3{
+    text-align: center;
+    font-size: 17px;
+    color: rgb(66, 74, 72);
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+#details .details-box{
+    background-color: rgb(15, 37, 30);
+    text-align: start;
+
+}
+#details .details-box h2{
+    font-size: 3.5rem;
+    color: #dcf3e1;
+    margin-top: 15px;
+   /* margin-left: 160px;*/
+    padding: 13px 0 7px 0;
+    text-align: center;
+}
+#details .details-box h3{
+    font-size: 1.3rem;
+    color: #fff;
+    margin-top: 15px;
+    padding: 13px 0 7px 0;
+   /* margin-left: 150px;*/
+    text-align: center;
+
+}
+#details .details-box p{
+    font-size: 1.0rem;
+    color: #fff;
+    margin-top: 10px;
+    padding: 4px 0 3px 0;
+    margin-left: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+#details .details-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 25px;
+}
+
+/*New Text*/
+.text{
+    display: flex;
+    margin-top: 55px;
+    background-color: #fff;
+    width: 100%;
+    height: 60%;
+    backdrop-filter:blur(1px); 
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.text-img{
+    padding: 25px;
+    
+}
+.text-new{
+    justify-content: flex-start;
+    padding-left: 50px;
+    
+}
+.text-new p{
+    font-weight: 400;
+    backdrop-filter:blur(1px); 
+    border-radius: 0;
+   /* text-align: justify;*/
+    width: 60%;
+    color: rgb(15, 37, 30);
+    font-size: 1.1rem;
+    line-height: 25px;
+    margin-top: 25px;
+    margin-left: 10%;
+    text-align: justify;
+
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    position: absolute;
+    bottom:auto;
+    background: #163427d3;
+    color: #fff;
+    padding:100px 0 30px ;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+  
+  }
+  .row{
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .col{
+    flex-basis: 25%;
+    padding: 10px;
+  }
+  
+  footer h2{
+    margin-top: 10px;
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+  }
+  footer p{
+    font-size: 1.0rem;
+   
+  }
+  .col h3{
+    width:fit-content ;
+    margin-bottom: 40px;
+    position: relative;
+    font-size: 1.3rem;
+   
+  }
+  .email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  ul p{
+    list-style: none;
+    margin-bottom: 12px;
+  }
+  .col p a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.0rem;
+  
+    
+  }
+  form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+  }
+  form .fa{
+    font-size: 18px;
+    margin-right: 10px;
+    color: #fff;
+  }
+  form input{
+    width: 100%;
+    background: transparent;
+    color: #777;
+    border: 0;
+    outline: none;
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+  form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  .social-icons .fa{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background-color: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  .copy{
+    text-align: center;
+    margin-top: 15px;
+  }
+
+

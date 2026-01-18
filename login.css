@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@,100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Popins',sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(7, 78, 54);
+}
+span{
+    font-size: .9rem;
+    color:rgb(195, 228, 211);
+}
+h6{
+    font-size: 1.1rem;
+    color: rgb(22, 111, 81);
+}
+
+body{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(backi.gif);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 100%;
+    max-width: 650px;
+    padding: 28px;
+    border-radius: 10px;
+    background-color: rgba(41, 40, 40, 0.5);
+    box-shadow: inset -2px 2px 2px white;
+}
+.title{
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.user-input-box{
+    
+    width: 100%;
+    padding-bottom: 15px;
+}
+.user-input-box label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid gray;
+    padding: 0 10px;
+}
+
+
+.form-submit-btn{
+    margin-top: 40px;
+
+}
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(209,209,209);
+    background: rgba(8, 40, 15, 0.7);
+}
+.form-submit-btn input:hover{
+    background-color: rgba(158, 217, 158, 0.7);
+    color: black;
+}
+
+.error{
+    background-color: crimson;
+    color: #fff;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+}

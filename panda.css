@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@,100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Popins',sans-serif;
+}
+/*logo*/
+nav{
+    flex-direction: row;
+
+}  
+nav img{
+    width: 70px;
+    cursor: pointer;
+    margin-left: 0.5px;
+}
+  .menu-bar {
+    background-color: #fff;
+    box-sizing: border-box;
+   
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5%;
+    position: fixed;
+  }
+  .menu-bar ul {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    list-style: none;
+  }
+  .menu-bar ul li {
+    margin-left: 30px;
+    
+    position: relative;
+    padding: 10px 20px;
+  }
+  .menu-bar ul li a {
+    font-size: 18px;
+    color: rgb(9, 82, 57);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .menu-bar ul li a:hover {
+    color:  rgb(114, 223, 183);
+  }
+  .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+  }
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+  }
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #fff;
+  }
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  
+  .menu-bar ul li .btn1{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 18px;
+    background-color: rgb(23, 71, 55);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.menu-bar ul li  .btn1:hover{
+    color: rgb(23, 71, 55);
+    background-color: #fff;
+}
+
+.menu-bar ul li a:hover{
+    color: rgb(43, 48, 47);
+}
+
+/*home*/
+#home{
+    background-image: url("panda.gif");
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding-top: 40px;
+
+}
+.heading h2{
+    color: rgb(26, 100, 75);
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    text-align: center;
+    
+}
+
+.heading{
+    margin-top: 40px;
+    text-align: center;
+}
+
+/*news*/
+.news{
+    margin: 40px;
+}
+.news h3{
+    color: rgb(67, 68, 68);
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.news-body{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 40px;
+}
+.news-img{
+    position:relative;
+}
+
+.news-text{
+    margin-top: 20px;
+    text-align: start;
+}
+.news-text h5{
+    color: rgb(67, 68, 68);
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+.news-text p{
+    text-align:start;
+    color: rgb(13, 27, 22);
+    font-size: 1.1rem;
+}
+/*shops*/
+.body-text{
+    display: flex;
+    margin-top: 50px;
+    background-color: #fff;
+    width: 100%;
+    height: 60%;
+    backdrop-filter:blur(1px); 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about{
+    justify-content: flex-start;
+    padding-left: 50px;
+    
+}
+.about p{
+    padding: 10px;
+    font-weight: 400;
+    backdrop-filter:blur(1px); 
+    width: 750px;
+    border-radius: 10px;
+    line-height: 10px; 
+    text-align: justify;
+    color: rgb(13, 27, 22);
+    font-size: 1.1rem;
+    line-height: 25px;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+.name{
+    font-size: 1.8rem;
+    color: rgb(67, 68, 68);
+    margin-top: 15px;
+    padding: 13px 0 7px 0;
+    text-align: center;
+}
+
+
+
+
+#about-container{
+    display: flex;
+    align-items: center;
+    padding: 6vw 6vw 2vw 6vw;
+}
+#about-container .about-image{
+    width: 80%;
+    height: 40%;
+}
+#about-container .about-text{
+    width: 80%;
+    padding: 0.02px;
+    
+}
+#about-container .about-text h2{
+    font-size: 1.8rem;
+    color: rgb(67, 68, 68);
+    margin-top: 15px;
+    padding: 13px 0 7px 0;
+    text-align: center;
+}
+#about-container .about-text p{
+    padding: 10px;
+    font-weight: 400;
+    backdrop-filter:blur(1px); 
+    width: 750px;
+    border-radius: 10px;
+    line-height: 10px; 
+    text-align: justify;
+    color: rgb(13, 27, 22);
+    font-size: 1.1rem;
+    line-height: 25px;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    position: absolute;
+    bottom:auto;
+    background: #163427d3;
+    color: #fff;
+    padding:100px 0 30px ;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+  
+  }
+  .row{
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .col{
+    flex-basis: 25%;
+    padding: 10px;
+  }
+  
+  footer h2{
+    margin-top: 10px;
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+  }
+  footer p{
+    font-size: 1.0rem;
+   
+  }
+  .col h3{
+    width:fit-content ;
+    margin-bottom: 40px;
+    position: relative;
+    font-size: 1.3rem;
+   
+  }
+  .email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  ul p{
+    list-style: none;
+    margin-bottom: 12px;
+  }
+  .col p a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.0rem;
+  
+    
+  }
+  form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+  }
+  form .fa{
+    font-size: 18px;
+    margin-right: 10px;
+    color: #fff;
+  }
+  form input{
+    width: 100%;
+    background: transparent;
+    color: #777;
+    border: 0;
+    outline: none;
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+  form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  .social-icons .fa{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background-color: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  .copy{
+    text-align: center;
+    margin-top: 15px;
+  }
