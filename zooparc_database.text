@@ -1,0 +1,83 @@
+-- Table structure for table `admin_data`
+DROP TABLE IF EXISTS `admin_data`;
+CREATE TABLE IF NOT EXISTS `admin_data` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(200) NOT NULL,
+  `user_email` varchar(200) NOT NULL,
+  `phonenumber` varchar(15) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+);
+
+-- Dumping data for table `admin_data`
+INSERT INTO `admin_data` (`id`, `user_name`, `user_email`, `phonenumber`, `password`) VALUES
+(1, 'thamashi', 'thamashi@gmail.com', '0112345673', '1234'),
+(2, 'Shemi', 'shemi@gmail.com', '0112345678', '0000');
+
+-- Table structure for table `educational_data`
+DROP TABLE IF EXISTS `educational_data`;
+CREATE TABLE IF NOT EXISTS `educational_data` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `topic` varchar(200) NOT NULL,
+  `about` varchar(500) NOT NULL,
+  `image` varchar(200) NOT NULL,
+  `author` varchar(200) NOT NULL,
+  PRIMARY KEY (`id`)
+);
+
+-- Dumping data for table `educational_data`
+INSERT INTO `educational_data` (`id`, `topic`, `about`, `image`, `author`) VALUES
+(4, 'Land Mammals', 'There are an estimated 100 billion land mammals living around the world. Winning Personality – Mammals comprise 18 out of 20 of the most charismatic species of animals...', 'education1.png', 'Ann'),
+(5, 'Avian Species', 'We used to think there were only 10,000 species of birds, but that number is now estimated at ~18,000...', 'education2.png', 'Jhon'),
+(6, 'Ocean Life', 'By some estimates, there are approximately 10 trillion wild fishes in the world...', 'education3.png', 'Ann');
+
+-- Table structure for table `event_data`
+DROP TABLE IF EXISTS `event_data`;
+CREATE TABLE IF NOT EXISTS `event_data` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(200) NOT NULL,
+  `about` varchar(500) NOT NULL,
+  `date` date NOT NULL,
+  `time` time NOT NULL,
+  `location` varchar(100) NOT NULL,
+  `image` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+);
+
+-- Dumping data for table `event_data`
+INSERT INTO `event_data` (`id`, `name`, `about`, `date`, `time`, `location`, `image`) VALUES
+(1, 'Dragons at Dusk Family Night', 'Families can journey to a world of pure imagination and enjoy an evening at the Zoo.', '2024-09-16', '18:00:00', 'Zoo parc', 'camp.jpeg'),
+(3, 'Breakfast with the Elephants', 'In this special event, rise and shine among the herd of African elephants.', '2024-09-23', '08:30:00', 'Zoo parc', 'eliphant.jpeg'),
+(4, 'The Beauval sea lion show', 'Join us in admiring and cheering on the agile sea lions in the aquatic amphitheatre.', '2024-09-03', '16:00:00', 'Zoo parc', 'sealion.jpeg'),
+(5, 'Breakfast with the Giant Pandas', 'Take a trip to the tropics and experience the Faces of the Rainforest like never before!', '2024-09-14', '08:30:00', 'Zoo parc', 'panda.jpeg'),
+(6, 'Brew at the Zoo', 'Experience your wild side at the Zoo with hundreds of beers, hard seltzers, and ready-to-drink cocktails...', '2024-10-01', '18:00:00', 'Zoo parc', 'night.jpeg'),
+(8, 'Summer Camp', 'Enjoy with families and meet new friends at night. Don\'t miss this wonderful chance.', '2024-09-26', '18:00:00', 'Zoo parc', 'summer.jpeg'),
+(9, 'Zoo Light', 'ZooLights takes thousands of visitors into a winter wonderland with dazzling displays...', '2024-12-07', '18:00:00', 'Zoo parc', 'light.jpg'),
+(10, 'Summer Film Night', 'Come to the Zoo for an unforgettable cinematic experience!', '2024-09-12', '19:00:00', 'Zoo parc', 'film.jpg');
+
+-- Table structure for table `user_data`
+DROP TABLE IF EXISTS `user_data`;
+CREATE TABLE IF NOT EXISTS `user_data` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(200) NOT NULL,
+  `user_email` varchar(200) NOT NULL,
+  `address` varchar(200) NOT NULL,
+  `phonenumber` varchar(15) NOT NULL,
+  `password` varchar(200) NOT NULL,
+  PRIMARY KEY (`id`)
+);
+
+-- Dumping data for table `user_data`
+INSERT INTO `user_data` (`id`, `name`, `user_email`, `address`, `phonenumber`, `password`) VALUES
+(1, 'Ann', 'ann@gmail.com', 'Australia', '0456789034', '1234'),
+(3, 'Brown', 'brown@gmail.com', 'New York', '099522365', 'q123'),
+(4, 'KatrinaKai', 'Kathi@gmail.com', 'New York', '0995334765', 'abc'),
+(5, 'Amaz', 'amaz@gmail.com', 'New York', '09963527', 'amaz2'),
+(6, 'Jhon', 'jhon@gmail.com', 'New York', '099689527', 'hjkl'),
+(7, 'Minoli', 'minoli@gmail.com', 'New York', '09635247', '3456'),
+(8, 'Buvi', 'buvi@gmail.com', 'Australia', '0456780034', '2345'),
+(9, 'Devon', 'devon@gmail.com', 'UK', '03625487', '1234'),
+(10, 'Mevon', 'mevon@gmail.com', 'Australia', '0455789034', '12345'),
+(11, 'Sami', 'sami@gmail.com', 'New York', '00004356', 'zxc'),
+(13, 'Mohomed', 'moho@gmail.com', 'India', '0936572980', '456'),
+(14, 'Methv', 'methiv@gmail.com', 'New York', '098725364', '1234');
